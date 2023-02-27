@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "728018829710",
+    "project_id": "playground-a2995",
+    "storage_bucket": "playground-a2995.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728018829710:android:31eef04023bc81a22264df",
+        "android_client_info": {
+          "package_name": "com.example.flutter_pg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728018829710-sl6u98h7of0tv8hndeuosm6u3ab59l2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2CPJrWNqWlor8zlHCuYtDbK3Ie0QIyOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728018829710-sl6u98h7of0tv8hndeuosm6u3ab59l2f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "728018829710-r62pcfess27utf7rfcua7ltfucubhr33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterPg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
