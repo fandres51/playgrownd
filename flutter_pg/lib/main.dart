@@ -1,7 +1,7 @@
 // import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_pg/models/custom_user.dart';
-import 'package:flutter_pg/pages/my_router.dart';
+import 'package:flutter_pg/my_router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_pg/services/auth.dart';
 import 'package:provider/provider.dart';

@@ -10,7 +10,7 @@ _router(user) => GoRouter(routes: [
       GoRoute(
         name: 'Home',
         path: '/',
-        builder: (context, state) => HomePage(),
+        builder: (context, state) => const HomePage(),
         redirect: (context, state) => user != null ? '/' : '/login',
       ),
       GoRoute(
