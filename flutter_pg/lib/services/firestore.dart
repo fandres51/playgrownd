@@ -21,10 +21,23 @@ class FirestoreService {
     }
   }
 
+  List<Anime> _animeListFromSnapshot(QuerySnapshot snapshot) {
+    return snapshot.docs.map((doc) {
+      var temp = doc.data() as Map<String, dynamic>;
+      return Anime(
+        name: temp['name'] ?? '',
+        numEpisodes: temp['num_episodes'] ?? 0,
+        onAir: temp['on_air'] ?? false,
+        imgUrl: temp['img_url'] ?? '',
+      );
+    }).toList();
+  }
+
+  final CollectionReference animesCollection = FirebaseFirestore.instance.collection('animes');
+
   Stream<List<Anime>> get animes {
-    return FirebaseFirestore.instance
-        .collection('anime')
+    return animesCollection
         .snapshots()
-        .map((snapshot) => Anime.fromMap(snapshot.docs.first.data()));
+        .map(_animeListFromSnapshot);
   }
 }
